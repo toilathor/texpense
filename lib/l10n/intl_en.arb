@@ -1,0 +1,10 @@
+{
+  "@@locale": "en",
+  "report": "Report",
+  "home": "Home",
+  "setting": "Setting",
+  "addNew": "Add new",
+  "createAccount": "Create an account",
+  "createAccountDes": "Get started by creating your account to secure your data & manage on multiple devices anytime!",
+  "signUpGoogle": "Sign up with Google"
+}

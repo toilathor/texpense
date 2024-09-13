@@ -1,0 +1,30 @@
+targets:
+  $default:
+    sources:
+      include:
+        - $package$
+        - lib/$lib$
+        - pubspec.yaml
+        - lib/**
+        - assets/**
+        - lib/**/**_cubit.dart
+        - lib/**/**_bloc.dart
+        - lib/**/**_state.dart
+        - lib/**/**_model.dart
+
+    builders:
+      flutter_code_gen:
+        enabled: True
+        generate_for:
+          include:
+            - assets/icons/*
+        options:
+          output: lib/gen/
+          class_name: IconTExpense
+          font_family: TExpense-Font-Icon
+
+      auto_route_generator:
+        enabled: True
+        generate_for:
+          include:
+            - lib/**

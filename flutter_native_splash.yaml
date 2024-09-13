@@ -1,0 +1,16 @@
+# dart run flutter_native_splash:create flutter_native_splash-development.yaml
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/logo_no_background_960.png
+  #  branding: assets/branding-development.png
+  color_dark: "#000000"
+  image_dark: assets/images/logo_no_background_960.png
+  #  branding_dark: assets/branding-development.png
+
+  android_12:
+    image: assets/images/logo_no_background_960.png
+    icon_background_color: "#000000"
+    image_dark: assets/images/logo_no_background_960.png
+    icon_background_color_dark: "#000000"
+
+#  web: false

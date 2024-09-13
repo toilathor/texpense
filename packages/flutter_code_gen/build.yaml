@@ -1,0 +1,18 @@
+# Documents: https://github.com/dart-lang/build/blob/master/docs/writing_an_aggregate_builder.md
+
+targets:
+  $default:
+    builders:
+      flutter_code_gen:
+        enabled: True
+
+builders:
+  flutter_code_gen:
+    import: "package:flutter_code_gen/flutter_code_gen.dart" # Tệp Dart chứa builder
+    builder_factories: [ "genIconFont" ]                       # Tên factory function để tạo builder
+    build_extensions: { ".json": [ ".gen.dart" ] }             # Quy định tệp đầu vào và tệp đầu ra
+    auto_apply: dependents                                   # Tự động áp dụng với các gói phụ thuộc
+    build_to: source                                         # Chỉ định vị trí file được gen ra source hoặc cache
+    required_inputs: [ ".json" ]                             # Loại file đầu vào mà builder cần
+    runs_before: [ "source_gen|combining_builder" ]          # Chạy trước builder khác
+    applies_builders: [ "source_gen|part_cleanup" ]          # Áp dụng các builder khác sau khi hoàn thành

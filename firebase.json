@@ -1,0 +1,59 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "texpense-4665f",
+          "appId": "1:745677241878:android:9bcb3b849fd2065d60bf37",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "texpense-4665f",
+          "appId": "1:745677241878:ios:0e3efd05b7a1244060bf37",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "texpense-4665f",
+          "appId": "1:745677241878:ios:0e3efd05b7a1244060bf37",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "texpense-4665f",
+          "configurations": {
+            "android": "1:745677241878:android:9bcb3b849fd2065d60bf37",
+            "ios": "1:745677241878:ios:0e3efd05b7a1244060bf37",
+            "macos": "1:745677241878:ios:0e3efd05b7a1244060bf37",
+            "web": "1:745677241878:web:54721df50fceb66160bf37",
+            "windows": "1:745677241878:web:e5264954af1455e660bf37"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "auth": {
+      "host": "0.0.0.0",
+      "port": 9099
+    },
+    "firestore": {
+      "host": "0.0.0.0",
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

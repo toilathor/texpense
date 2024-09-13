@@ -1,0 +1,33 @@
+name: flutter_code_gen_example
+description: A code generator for flutter that reads icomoon selection.json and generate the icon classes
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_code_gen:
+    path: ../
+
+dev_dependencies:
+  build_runner: ^2.4.7
+
+flutter:
+  assets:
+    - assets/
+    - assets/icon/
+
+flutter_code_gen:
+  output: lib/gen/
+  icon_ico_moon:
+    enabled: true
+    inputs:
+      - assets/icon/selection.json
+      - assets/icon/selection.json
+    outputs:
+      class_name: IcoMoons
+      font_family: Times-New-Roman
